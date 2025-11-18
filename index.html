@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Stock Market - Live Prices</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <h1>Indian Stock Market Tracker</h1>
+            <p class="subtitle">Real-time prices of India's top companies</p>
+        </header>
+
+        <!-- Controls -->
+        <div class="controls">
+            <div class="search-box">
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search company name or symbol..."
+                    class="search-input"
+                >
+                <button id="searchBtn" class="search-btn">Search</button>
+            </div>
+
+            <div class="filter-controls">
+                <select id="sectorFilter" class="filter-select">
+                    <option value="">All Sectors</option>
+                    <option value="Technology">Technology</option>
+                    <option value="Finance">Finance</option>
+                    <option value="Energy">Energy</option>
+                    <option value="Healthcare">Healthcare</option>
+                    <option value="Consumer">Consumer</option>
+                    <option value="Utilities">Utilities</option>
+                </select>
+
+                <select id="sortSelect" class="filter-select">
+                    <option value="name">Sort by Name</option>
+                    <option value="price-high">Price (High to Low)</option>
+                    <option value="price-low">Price (Low to High)</option>
+                    <option value="change">Change %</option>
+                </select>
+            </div>
+
+            <div class="refresh-info">
+                <span id="lastUpdate" class="last-update">Last updated: --</span>
+                <button id="refreshBtn" class="refresh-btn">Refresh Now</button>
+            </div>
+        </div>
+
+        <!-- Loading Indicator -->
+        <div id="loadingIndicator" class="loading-indicator" style="display: none;">
+            <div class="spinner"></div>
+            <p>Loading stock data...</p>
+        </div>
+
+        <!-- Error Message -->
+        <div id="errorMessage" class="error-message" style="display: none;"></div>
+
+        <!-- Stock Table -->
+        <div class="table-wrapper">
+            <table class="stock-table" id="stockTable">
+                <thead>
+                    <tr>
+                        <th>Company</th>
+                        <th>Symbol</th>
+                        <th>Sector</th>
+                        <th>Price</th>
+                        <th>Change</th>
+                        <th>Change %</th>
+                        <th>Market Cap</th>
+                        <th>P/E Ratio</th>
+                        <th>52W High</th>
+                        <th>52W Low</th>
+                        <th>Dividend Yield</th>
+                        <th>Volume</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Stock rows will be inserted here -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- No Results -->
+        <div id="noResults" class="no-results" style="display: none;">
+            <p>No stocks found matching your search criteria.</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
