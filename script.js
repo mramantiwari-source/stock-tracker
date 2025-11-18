@@ -261,16 +261,16 @@ function renderStocks(stocks = filteredStocks) {
                 <span class="sector">${stock.sector}</span>
             </td>
             <td>
-                <span class="price">₹${stock.price.toFixed(2)}</span>
+                <span class="price">₹${typeof stock.price === 'number' ? stock.price.toFixed(2) : stock.price}</span>
             </td>
             <td>
                 <span class="${stock.change >= 0 ? 'positive' : 'negative'}">
-                    ₹${Math.abs(stock.change).toFixed(2)}
+                    ₹${typeof stock.change === 'number' ? Math.abs(stock.change).toFixed(2) : stock.change}
                 </span>
             </td>
             <td>
                 <span class="${stock.changePercent >= 0 ? 'positive' : 'negative'}">
-                    ${stock.changePercent >= 0 ? '+' : ''}${stock.changePercent.toFixed(2)}%
+                    ${typeof stock.changePercent === 'number' ? (stock.changePercent >= 0 ? '+' : '') + stock.changePercent.toFixed(2) + '%' : stock.changePercent}
                 </span>
             </td>
             <td>
@@ -280,13 +280,13 @@ function renderStocks(stocks = filteredStocks) {
                 <span class="metric">${stock.peRatio}</span>
             </td>
             <td>
-                <span class="metric">₹${stock.high52w.toFixed(2)}</span>
+                <span class="metric">₹${typeof stock.high52w === 'number' ? stock.high52w.toFixed(2) : stock.high52w}</span>
             </td>
             <td>
-                <span class="metric">₹${stock.low52w.toFixed(2)}</span>
+                <span class="metric">₹${typeof stock.low52w === 'number' ? stock.low52w.toFixed(2) : stock.low52w}</span>
             </td>
             <td>
-                <span class="metric">${stock.dividendYield.toFixed(2)}%</span>
+                <span class="metric">${typeof stock.dividendYield === 'number' ? stock.dividendYield.toFixed(2) + '%' : stock.dividendYield}</span>
             </td>
             <td>
                 <span class="metric">${formatVolume(stock.volume)}</span>
