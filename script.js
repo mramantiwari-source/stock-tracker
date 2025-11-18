@@ -71,7 +71,13 @@ const stockTable = document.getElementById('stockTable');
 // Initialize
 document.addEventListener('DOMContentLoaded', () => {
     setupEventListeners();
-    refreshData(); // Load live data on startup
+    // Load demo data immediately
+    currentStocks = [...stockData];
+    filteredStocks = [...stockData];
+    handleSearch();
+    updateTimestamp();
+    // Then try to fetch live data
+    refreshData();
     startAutoRefresh();
 });
 
