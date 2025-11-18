@@ -1,5 +1,5 @@
 // IMPORTANT: Replace 'YOUR_FINNHUB_API_KEY' with your actual API key from https://finnhub.io/
-const FINNHUB_API_KEY = 'YOUR_FINNHUB_API_KEY';
+const FINNHUB_API_KEY = 'd4duha1r01qmhtc68pc0d4duha1r01qmhtc68pcg';
 const FINNHUB_BASE_URL = 'https://finnhub.io/api/v1';
 
 // Stock metadata with company info
