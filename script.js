@@ -4,26 +4,26 @@ const FINNHUB_BASE_URL = 'https://finnhub.io/api/v1';
 
 // Stock metadata with company info
 const stockMetadata = [
-    { name: "Reliance Industries", symbol: "RIL.NS", sector: "Energy" },
-    { name: "TCS (Tata Consultancy Services)", symbol: "TCS.NS", sector: "Technology" },
-    { name: "HDFC Bank", symbol: "HDFCBANK.NS", sector: "Finance" },
-    { name: "ICICI Bank", symbol: "ICICIBANK.NS", sector: "Finance" },
-    { name: "Axis Bank", symbol: "AXISBANK.NS", sector: "Finance" },
-    { name: "Infosys", symbol: "INFY.NS", sector: "Technology" },
-    { name: "Wipro", symbol: "WIPRO.NS", sector: "Technology" },
-    { name: "HCL Technologies", symbol: "HCLTECH.NS", sector: "Technology" },
-    { name: "ITC", symbol: "ITC.NS", sector: "Consumer" },
-    { name: "Hindustan Unilever", symbol: "HNDLUNIV.NS", sector: "Consumer" },
-    { name: "Maruti Suzuki", symbol: "MARUTI.NS", sector: "Consumer" },
-    { name: "Bajaj Auto", symbol: "BAJAJAUTH.NS", sector: "Consumer" },
-    { name: "Power Grid Corporation", symbol: "POWERGRID.NS", sector: "Utilities" },
-    { name: "Coal India", symbol: "COALINDIA.NS", sector: "Energy" },
-    { name: "JSW Steel", symbol: "JSWSTEEL.NS", sector: "Energy" },
-    { name: "Bharti Airtel", symbol: "BHARTIARTL.NS", sector: "Technology" },
-    { name: "Bajaj Finserv", symbol: "BAJAJFINSV.NS", sector: "Finance" },
-    { name: "ICICI Prudential", symbol: "ICICIPRULI.NS", sector: "Finance" },
-    { name: "SBI (State Bank of India)", symbol: "SBIN.NS", sector: "Finance" },
-    { name: "NTPC Limited", symbol: "NTPC.NS", sector: "Energy" }
+    { name: "Reliance Industries", symbol: "RIL", sector: "Energy" },
+    { name: "TCS (Tata Consultancy Services)", symbol: "TCS", sector: "Technology" },
+    { name: "HDFC Bank", symbol: "HDFCBANK", sector: "Finance" },
+    { name: "ICICI Bank", symbol: "ICICIBANK", sector: "Finance" },
+    { name: "Axis Bank", symbol: "AXISBANK", sector: "Finance" },
+    { name: "Infosys", symbol: "INFY", sector: "Technology" },
+    { name: "Wipro", symbol: "WIPRO", sector: "Technology" },
+    { name: "HCL Technologies", symbol: "HCLTECH", sector: "Technology" },
+    { name: "ITC", symbol: "ITC", sector: "Consumer" },
+    { name: "Hindustan Unilever", symbol: "HNDLUNIV", sector: "Consumer" },
+    { name: "Maruti Suzuki", symbol: "MARUTI", sector: "Consumer" },
+    { name: "Bajaj Auto", symbol: "BAJAJAUTH", sector: "Consumer" },
+    { name: "Power Grid Corporation", symbol: "POWERGRID", sector: "Utilities" },
+    { name: "Coal India", symbol: "COALINDIA", sector: "Energy" },
+    { name: "JSW Steel", symbol: "JSWSTEEL", sector: "Energy" },
+    { name: "Bharti Airtel", symbol: "BHARTIARTL", sector: "Technology" },
+    { name: "Bajaj Finserv", symbol: "BAJAJFINSV", sector: "Finance" },
+    { name: "ICICI Prudential", symbol: "ICICIPRULI", sector: "Finance" },
+    { name: "SBI (State Bank of India)", symbol: "SBIN", sector: "Finance" },
+    { name: "NTPC Limited", symbol: "NTPC", sector: "Energy" }
 ];
 
 // Default/cached stock data for fallback
